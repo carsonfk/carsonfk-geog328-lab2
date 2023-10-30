@@ -1,6 +1,12 @@
 let icon = document.getElementsByClassName("icon")[0];
+var acc = document.getElementsByClassName("accordion");
+var i;
+var modal = document.getElementById("myModal");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
 
-//icon.addEventListener('click', responsive_control);
+icon.addEventListener('click', responsive_control);
 
 function responsive_control() {
   let x = document.getElementById("myTopnav");
@@ -11,16 +17,11 @@ function responsive_control() {
   }
 }
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
     this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
@@ -28,4 +29,17 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "block";
     }
   });
+}
+
+
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
 }

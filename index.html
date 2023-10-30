@@ -4,7 +4,6 @@
         <title>Dead Space (Franchise)</title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="js/main.js"></script>
     </head>
     <body>
         <div class="topnav" id="myTopnav">
@@ -16,58 +15,74 @@
             </a>
         </div>
         <h1>Dead Space (Franchise)</h1>
-        <img src="img/Dead_Space_Box_Art.jpg" alt="Dead Space box art">
-        <p>
-            <i>Dead Space</i> is a sci-fi horror game series published and owned by Electronic Arts (EA). 
-            The primary developer of the series was Visceral Games, which developed the main three entries in the series. 
-            Additionally, two spinoff games were released, alongside a mobile port of the first game. 
-            In 2023, a ground-up remake of the first game by Motive Studio was released by EA.
-        </p>
-        <p>
-            The games are set in the 26th century during an outbreak of an undead alien species, called Necromorphs, across the solar system.
-        </p>
+        <img id="myImg" src="img/Dead_Space_Box_Art.jpg" alt="Dead Space box art" style="width:100%;max-width:300px">
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
 
-        <button class="accordion">Dead Space</button>
-        <div class="panel">
-            <p>
-                Players control an engineer named Isaac Clarke as he and a team of specialists arrive to investigate the USG Ishimura's mysterious blackout. 
-                After docking with the ship, they discover a Necromorph outbreak is to blame. 
-                Isaac must survive long enough to escape the overrun ship, ultimately leading him to discover source of the outbreak and his persistant hallucinations.
-            </p>
-            <p>
-                Released in 2008, the game was very sucessful for EA, selling over a million copies and receiving excellent reviews.
-            </p>
-        </div>
-        <button class="accordion">Dead Space 2</button>
-        <div class="panel">
-            <p>
-                Isaac Clarke returns in Dead Space 2, now haunted by worsened hallucinations. 
-                He wakes up on space station orbiting Saturn, which is also facing its own Necromorph outbreak. 
-                Here Isaac encounters new survivors and new Necromorphs, alongside new disturbing details and developments surrounding the events of the first game. 
-            </p>
-            <p>
-                Dead Space 2 was also very sucessful when it released in 2011, with sales and review scores nearly as high as those of the first game.
-            </p>
-        </div>
-        <button class="accordion">Dead Space 3</button>
-        <div class="panel">
-            <p>
-                A few years later, Isaac Clarke battles another outbreak on a distant Earth colony on Tau Volantis, where he hopes to end the Necromorph outbreaks for good. 
-            </p>
-            <p>
-                Critical and commercial reception of Dead Space 3, which released in 2013, was significantly below those of the first two games, in part due to a reduced focus on horror, 
-                addition of cooperative play and in-game purchases, and an overall lack of innovation or improvements.
-            </p>
-        <button class="accordion">Dead Space (remake)</button>
-        <div class="panel">
-            <p>
-                A remake of the 2008 game, the plot is largely unchanged aside from a few minor changes and additions to both written and spoken dialogue. 
-                The changes included in the remake were primarily focused on updating the objectively outdated aspects of the game, such as visuals.
-            </p>
-            <p>
-                Released in 2023 - nearly 10 years after Dead Space 3 - the game was recieved very positively critically and comercially.
-                This success can be attributed to the graphical, audio, and gameplay overhauls, which were seen as both impressive and faithful to the original game.
-            </p>
-        </div>
+
+        <section>
+            <div>
+                <p>
+                    <i>Dead Space</i> is a sci-fi horror game series published and owned by Electronic Arts (EA). 
+                    The primary developer of the series was Visceral Games, which developed the main three entries in the series. 
+                    Additionally, two spinoff games were released, alongside a mobile port of the first game. 
+                    In 2023, a ground-up remake of the first game by Motive Studio was released by EA.
+                </p>
+                <p>
+                    The games are set in the 26th century during an outbreak of an undead alien species, called Necromorphs, across the solar system.
+                </p>
+            </div>
+
+            <button class="accordion">Dead Space</button>
+            <div class="panel">
+                <p>
+                    Players control an engineer named Isaac Clarke as he and a team of specialists arrive to investigate the USG Ishimura's mysterious blackout. 
+                    After docking with the ship, they discover a Necromorph outbreak is to blame. 
+                    Isaac must survive long enough to escape the overrun ship, ultimately leading him to discover source of the outbreak and his persistant hallucinations.
+                </p>
+                <p>
+                    Released in 2008, the game was very sucessful for EA, selling over a million copies and receiving excellent reviews.
+                </p>
+            </div>
+
+            <button class="accordion">Dead Space 2</button>
+            <div class="panel">
+                <p>
+                    Isaac Clarke returns in Dead Space 2, now haunted by worsened hallucinations. 
+                    He wakes up on space station orbiting Saturn, which is also facing its own Necromorph outbreak. 
+                    Here Isaac encounters new survivors and new Necromorphs, alongside new disturbing details and developments surrounding the events of the first game. 
+                </p>
+                <p>
+                    Dead Space 2 was also very sucessful when it released in 2011, with sales and review scores nearly as high as those of the first game.
+                </p>
+            </div>
+
+            <button class="accordion">Dead Space 3</button>
+            <div class="panel">
+                <p>
+                    A few years later, Isaac Clarke battles another outbreak on a distant Earth colony on Tau Volantis, where he hopes to end the Necromorph outbreaks for good. 
+                </p>
+                <p>
+                    Critical and commercial reception of Dead Space 3, which released in 2013, was significantly below those of the first two games, in part due to a reduced focus on horror, 
+                    addition of cooperative play and in-game purchases, and an overall lack of innovation or improvements.
+                </p>
+            </div>
+
+            <button class="accordion">Dead Space (remake)</button>
+            <div class="panel">
+                <p>
+                    A remake of the 2008 game, the plot is largely unchanged aside from a few minor changes and additions to both written and spoken dialogue. 
+                    The changes included in the remake were primarily focused on updating the objectively outdated aspects of the game, such as visuals.
+                </p>
+                <p>
+                    Released in 2023 - nearly 10 years after Dead Space 3 - the game was recieved very positively critically and comercially.
+                    This success can be attributed to the graphical, audio, and gameplay overhauls, which were seen as both impressive and faithful to the original game.
+                </p>
+            </div>
+        </section>
+        <script src="js/main.js"></script>
     </body>
 </html>
